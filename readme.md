@@ -1,4 +1,10 @@
-# Configurações iniciais do Laravel
+<p align="center" id="top">
+    <img alt="Readme" title="Readme GIF" src="banner.png" />
+</p>
+
+<h1 align="center">LARAVEL</h1>
+
+## Configurações iniciais do Laravel
 
 ### Iniciando servidor Laravel
 
@@ -8,42 +14,52 @@ php artisan serve
 
 ### Artisan console help
 
+### Mostra informações especificas do comando informado
+
 ```php
-//Mostra informações especificas do comando informado.
-php artisan help <make:controller>
+php artisan help [make:controller]
 ```
+
+## Controller
 
 ### Criando um controller
 
 ```php
-php artisan make:controller <ExemploController>
-
-//Com métodos básicos
-php artisan make:controller <ExemploController> --resource
+php artisan make:controller [ExemploController]
 ```
 
-### Criando um model
+### Com métodos básicos
 
 ```php
-//Criar modelo no singular
-php artisan make:model <Exemplo>
+php artisan make:controller [ExemploController] --resource
 ```
 
+## Model
+
+### Criar modelo no singular
+
 ```php
-//Criar modelo no sigular + migration no plural
-php artisan make:model <Exemplo> -m
+php artisan make:model [Exemplo]
 ```
 
-### Criando uma migration
+### Criar modelo no sigular + migration no plural
 
 ```php
-// Criar migration no plural
-php artisan make:migration <create_exemplos_table>
+php artisan make:model [Exemplo] -m
 ```
 
+## Migration
+
+### Criar migration no plural
+
 ```php
-//Informa ao Laravel que esta sendo criado uma tabela
-php artisan make:migration <create_exemplos_table> --create=exemplos
+php artisan make:migration [create_exemplos_table]
+```
+
+### Informa ao Laravel que esta sendo criado uma tabela
+
+```php
+php artisan make:migration [create_exemplos_table] --create=exemplos
 ```
 
 ### Criando uma tabela no banco de dados com migration
@@ -70,16 +86,17 @@ php artisan migrate:fresh --seed
 php artisan migrate:rollback --step=1
 ```
 
+## Seeder
+
 ### Criando uma classe Seeder
 
 ```php
-php artisan make:seed <UsersTableSeeder>
+php artisan make:seed [UsersTableSeeder]
 ```
 
 ### Iserindo no banco de dados com Seeder
 
 ```php
-// Todas as Seeds
 php artisan db:seed
 ```
 
@@ -92,3 +109,23 @@ php artisan db:seed --class=UsersTableSeeder
 ```php
 php artisan view:clear
 ```
+
+## Referências
+
+- Pesquisa
+
+  - [Laravel Docs](https://laravel.com/docs/9.x)
+
+### Wakatime
+
+Tempo gasto no IDE para este repositório, rastreado automaticamente com [wakatime](https://wakatime.com/) .
+
+[![wakatime](https://wakatime.com/badge/github/JuniorLima22/cli-laravel.svg)](https://wakatime.com/badge/github/JuniorLima22/cli-laravel)
+
+### Autor
+
+> Made with 💙 by JUNIOR LIMA 👋 <a href="https://www.linkedin.com/in/JuniorLima22/" target="_blank">See my LinkedIn</a> • GitHub <a href="https://github.com/JuniorLima22" target="_blank">@JuniorLima22</a>
+
+<p align="center">
+<sub><a href="#top" align="center">↑ voltar para o topo ↑</a></sub>
+</p>
